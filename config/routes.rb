@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'auth/:provider/callback' => 'sessions#create', as: :ouath_callback
+  get 'auth/:provider' => 'sessions#new', as: :ouath_login
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
