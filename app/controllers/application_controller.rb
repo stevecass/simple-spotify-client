@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   def ensure_current_user
-    redirect_to ouath_login unless current_user
+    redirect_to ouath_login_path('spotify') unless current_user
   end
 end
