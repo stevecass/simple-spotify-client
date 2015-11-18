@@ -23,6 +23,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'omniauth-spotify'
+gem 'awesome_print'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
