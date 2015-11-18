@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     @current_lg_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
   end
 
-  def ensure_login
+  def ensure_current_user
     redirect_to ouath_login unless current_user
   end
 end
