@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
   private
 
   def create_from_local_login
-    u = User.find_by(email: params[:email], provider: 'LOCAL_LOGIN')
+    u = User.find_by(email: params[:email], provider: LOCAL_LOGIN)
     if u && u.authenticate(params[:password])
       session[:user_id] = u.id
       session[:token] = auth_hash[:credentials][:token]
