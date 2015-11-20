@@ -5,9 +5,7 @@ class SessionsController < ApplicationController
     else
       create_from_local_login
     end
-
   end
-
 
   private
 
